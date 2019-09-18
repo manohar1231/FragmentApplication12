@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/fragmentContainer"-->
+        <!--android:layout_above="@id/rel"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rel"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true">-->
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/bNV"
+        app:menu="@menu/nav_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <android.support.v4.view.ViewPager
+    android:id="@+id/viewpager"
+    android:layout_above="@id/bNV"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</android.support.v4.view.ViewPager>
+
+
+
+        <!--<Button-->
+            <!--android:id="@+id/remFra"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Remove"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:onClick="remHandler"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/repFra"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Replace"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:onClick="repHandler"/>-->
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>
